@@ -3,12 +3,12 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Hero } from "../components/Hero";
 import { Services } from "../components/Services";
-import AnalyticsDashboard from "../components/AnalyticsDashboard";
+import WorkExamples from "../components/WorkExamples";
 import { WhyChooseUs } from "../components/WhyChooseUs";
 import { Workflow } from "../components/Workflow";
 import { Testimonials } from "../components/Testimonials";
 import About from "../components/About";
-import { Contact } from "../components/Contact";
+import  Contact  from "../components/Contact";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Services />
-      <AnalyticsDashboard />
+      <WorkExamples/>
       <WhyChooseUs />
       <Workflow />
       <Testimonials />

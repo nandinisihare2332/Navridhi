@@ -151,9 +151,9 @@ const ResetPassword = () => {
 
         <div>
 
-          <h1 className='text-3xl font-black tracking-tight bg-gradient-to-r from-black via-[#1f1f1f] to-[#d4a017] bg-clip-text text-transparent'>
-            Navridhi
-          </h1>
+          <h1 className='text-2xl font-bold text-gray-900 tracking-wide'>
+          Nav<span className='text-yellow-500'>ridhi</span>
+        </h1>
 
           <p className='text-[10px] uppercase tracking-[0.35em] text-[#8c7b57]'>
             Growth In Numbers

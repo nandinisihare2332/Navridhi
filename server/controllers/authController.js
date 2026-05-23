@@ -274,3 +274,56 @@ export const resetPassword = async (req,res)=>{
     return res.json({success:false,message:error.message});
   }
 }
+
+export const sendContactMessage = async (req, res) => {
+
+  const { name, email, phone, company, message } = req.body;
+
+  if (!name || !email || !message) {
+    return res.json({
+      success: false,
+      message: "Please fill all required fields"
+    });
+  }
+
+  try {
+
+    const mailOptions = {
+      from: process.env.SENDER_EMAIL,
+      to: process.env.SENDER_EMAIL,
+      subject: `New Contact Form Submission from ${name}`,
+
+      html: `
+        <h2>New Contact Message</h2>
+
+        <p><strong>Name:</strong> ${name}</p>
+
+        <p><strong>Email:</strong> ${email}</p>
+
+        <p><strong>Phone:</strong> ${phone}</p>
+
+        <p><strong>Company:</strong> ${company}</p>
+
+        <p><strong>Message:</strong></p>
+
+        <p>${message}</p>
+      `
+    };
+
+    await transporter.sendMail(mailOptions);
+
+    return res.json({
+      success: true,
+      message: "Message sent successfully"
+    });
+
+  } catch (error) {
+
+    return res.json({
+      success: false,
+      message: error.message
+    });
+
+  }
+
+};

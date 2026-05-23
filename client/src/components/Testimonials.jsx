@@ -9,22 +9,24 @@ import { motion } from "framer-motion";
 
 const reviews = [
   {
-    name: "Ananya Mehta",
-    role: "Founder, Lumen Studio",
+    name: "Abhay Mangal",
+    role: "Founder, Techmo",
     quote:
-      "Navridhi rebuilt our analytics stack and our revenue is up 3.2x in 9 months. Sharp, accountable, and consistently ahead.",
+      "Navridhi helped us modernize our digital presence and reporting systems. Their analytics insights and execution brought much better clarity to our manufacturing operations.",
   },
+
   {
-    name: "Rohan Bhatia",
-    role: "CEO, Northcraft",
+    name: "Rahul Sharma",
+    role: "Founder, Delhi Ecom Store",
     quote:
-      "The team feels like an in-house growth function. Their dashboards run our weekly leadership reviews.",
+      "Their dashboards and growth insights helped us improve ecommerce performance and make faster business decisions with confidence.",
   },
+
   {
-    name: "Priya Sharma",
-    role: "Director, Velvet & Oak",
+    name: "Priya Verma",
+    role: "Owner, Jaipur Fashion Hub",
     quote:
-      "Premium delivery, real insight. They translate data into decisions we can act on every single week.",
+      "The website and analytics system they built completely changed how we track customer engagement and business growth. Professional and reliable team.",
   },
 ];
 
