@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 4000
 connectDB();
 
-const allowedOrigins=['https://navridhi-2.onrender.com']
+const allowedOrigins=['https://navridhi-weld.vercel.app/']
 
 app.use(express.json());
 app.use(cookieParser());
